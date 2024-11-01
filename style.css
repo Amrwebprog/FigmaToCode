@@ -1,0 +1,190 @@
+:root {
+  --main-color: linear-gradient(90deg, rgb(97, 96, 250), rgb(154, 62, 208));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+.heroSection {
+  background: var(--main-color);
+  width: 100%;
+
+  position: relative;
+}
+
+.heroSection::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255); /* لون الخلفية أسفل الموجة */
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+  z-index: 1; /* اجعلها في المقدمة */
+}
+.mobile {
+  width: 50%;
+  height: 600px;
+  border: 3px solid white;
+  position: absolute;
+  background-color: rgb(97, 96, 250);
+  border-radius: 30px;
+  top: -200px;
+  left: 20px;
+}
+.mobile1 {
+  width: 50%;
+  height: 600px;
+  border: 5px solid gray;
+
+  background: var(--main-color);
+  border-radius: 30px;
+}
+.camira-container {
+  width: 50%;
+  height: 50px;
+  background-color: white;
+  border: 3px solid rgb(199, 199, 199);
+  border-radius: 0 0 10px 10px;
+}
+.camira-container1 {
+  width: 50%;
+  height: 50px;
+  background-color: rgb(185, 184, 184);
+  border: 3px solid rgb(209, 208, 208);
+  border-radius: 0 0 10px 10px;
+}
+.forHeight {
+  height: 75vh;
+}
+.myBtn {
+  padding: 1px;
+  border: none;
+
+  font-size: 25px;
+
+  background-color: white;
+}
+.myBtn:hover {
+  border-bottom: 2px solid cadetblue;
+  color: cadetblue;
+}
+.line {
+  height: 1px;
+  background-color: black;
+}
+.GrayBg {
+  background-color: rgba(216, 215, 215, 0.589);
+}
+
+.Mybg {
+  background: var(--main-color);
+}
+.lightGrayBg {
+  background-color: rgba(243, 241, 241, 0.589);
+}
+.bgimg {
+  background-image: url('./assits/istockphoto-1798696118-1024x1024.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+}
+.circ {
+  margin: auto;
+  background: var(--main-color);
+  padding: 35px;
+  border-radius: 50%;
+}
+.my-gap {
+  gap: 18px;
+}
+.forAvatars {
+  flex: 1 1 calc(20% - 20px);
+}
+
+.Spec {
+  flex: 1 1 calc(22% - 20px);
+}
+.myHeight {
+  height: 48vh;
+}
+.footerbg {
+  background-color: rgb(13, 17, 55);
+}
+/* Mobiles*/
+@media screen and (max-width: 600px) {
+  .forAvatars {
+    flex: 1 1 100%;
+  }
+  .bgimg {
+    height: 40vh;
+  }
+  .mobile {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 450px;
+  }
+  .forHeight {
+    height: auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .Responsive {
+    align-items: center !important;
+    height: 450px;
+  }
+}
+
+/*Taplet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .forAvatars {
+    flex: 1 1 100%;
+  }
+  .bgimg {
+    height: 40vh;
+  }
+  .mobile {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 450px;
+  }
+  .forHeight {
+    height: auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .Responsive {
+    align-items: center !important;
+    height: 450px;
+  }
+}
+
+/* pc*/
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  /* أنماط CSS هنا */
+}
+
+/* PC Larg */
+@media screen and (min-width: 1201px) {
+  /* أنماط CSS هنا */
+}
