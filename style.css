@@ -125,6 +125,12 @@ p {
 }
 /* Mobiles*/
 @media screen and (max-width: 600px) {
+  .MakeItReponsive {
+    display: none !important;
+  }
+  .menue {
+    display: block !important;
+  }
   .forAvatars {
     flex: 1 1 100%;
   }
@@ -153,6 +159,12 @@ p {
 
 /*Taplet */
 @media screen and (min-width: 601px) and (max-width: 900px) {
+  .MakeItReponsive {
+    display: none !important;
+  }
+  .menue {
+    display: block !important;
+  }
   .forAvatars {
     flex: 1 1 100%;
   }
